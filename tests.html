@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>QUnit Main Test Suite</title>
+	<link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.8.0.css">
+	<link rel="stylesheet" href="../../qunit-composite.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/sinon.js/7.1.1/sinon.js"></script>
+	<script src="https://code.jquery.com/qunit/qunit-2.8.0.js"></script>
+	<script src="../../jquery-3.3.1.js"></script>
+	<script src="tests.js"></script>
+	<script src="../../qunit-composite.js"></script>
+	<script src="mycode.js"></script>
+	<script>
+		QUnit.testSuites([
+			"./foo.html",
+			"./bar.html"
+		]);
+	</script>
+	
+</head>
+<body>
+	<div id="qunit"></div>
+	<div id="qunit-fixture">
+		<div id='div1' />
+	</div>
+</body>
+</html>
